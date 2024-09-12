@@ -1,6 +1,6 @@
 {
-    "name": "master_v_p_n",
-    "short_name": "master_v_p_n",
+    "name": "master_vpn",
+    "short_name": "master_vpn",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

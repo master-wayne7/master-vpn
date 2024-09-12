@@ -5,7 +5,7 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = master_v_p_n
+PRODUCT_NAME = master_vpn
 
 // The application's bundle identifier
 PRODUCT_BUNDLE_IDENTIFIER = com.master-vpn.masterVPn

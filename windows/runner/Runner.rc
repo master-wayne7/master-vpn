@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.master-vpn" "\0"
-            VALUE "FileDescription", "master_v_p_n" "\0"
+            VALUE "FileDescription", "master_vpn" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "master_v_p_n" "\0"
+            VALUE "InternalName", "master_vpn" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.master-vpn. All rights reserved." "\0"
-            VALUE "OriginalFilename", "master_v_p_n.exe" "\0"
-            VALUE "ProductName", "master_v_p_n" "\0"
+            VALUE "OriginalFilename", "master_vpn.exe" "\0"
+            VALUE "ProductName", "master_vpn" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
