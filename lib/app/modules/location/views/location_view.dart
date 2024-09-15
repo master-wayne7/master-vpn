@@ -12,12 +12,7 @@ class LocationView extends GetView<LocationController> {
         title: Obx(() => Text('VPN Locations ${controller.vpnServerList.length}')),
         centerTitle: false,
       ),
-      body: const Center(
-        child: Text(
-          'LocationView is working',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
+      body: Obx(() => controller.isLoading.value ? CircularProgressIndicator.adaptive() : SizedBox()),
     );
   }
 }

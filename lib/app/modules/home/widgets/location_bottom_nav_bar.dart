@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:master_vpn/app/modules/location/bindings/location_binding.dart';
 import 'package:master_vpn/app/modules/location/views/location_view.dart';
 import 'package:master_vpn/app/services/responsive_size.dart';
 
@@ -56,7 +57,7 @@ class LocationSelectionBottomNavBar extends StatelessWidget {
                 color: Colors.transparent,
                 child: InkWell(
                   onTap: () {
-                    Get.to(() => const LocationView());
+                    Get.to(() => const LocationView(), binding: LocationBinding());
                   },
                 ),
               ),

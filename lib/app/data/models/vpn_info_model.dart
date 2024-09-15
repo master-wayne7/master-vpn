@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 class VpnInfoModel {
@@ -61,7 +60,7 @@ class VpnInfoModel {
     return VpnInfoModel(
       hostname: map['HostName'] ?? "",
       ip: map['IP'] ?? "",
-      ping: map['Ping'],
+      ping: map['Ping'] ?? 0,
       countryLongName: map['CountryLong'] ?? "",
       countryShortName: map['CountryShort'] ?? "",
       base64OpenVPNConfigurationData: map['OpenVPN_ConfigData_Base64'] ?? "",

@@ -31,12 +31,11 @@ class AppPreferences {
         }
       }
     }
-
     return vpnList;
   }
 
   static set vpnInfoList(List<VpnInfoModel> listData) {
-    final String jsonList = jsonEncode(listData.map((e) => e.toJson()).toList());
+    final String jsonList = jsonEncode(listData.map((e) => e.toMap()).toList());
     boxOfData.put("vpnList", jsonList);
   }
 }
