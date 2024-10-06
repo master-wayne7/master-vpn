@@ -15,7 +15,7 @@ class VpnRepository {
     final List<VpnInfoModel> vpnList = [];
     try {
       final response = await _dio.get(
-        "http://www.vpngate.net/api/iphone",
+        "https://www.vpngate.net/api/iphone",
         options: Options(
           responseType: ResponseType.plain,
         ),

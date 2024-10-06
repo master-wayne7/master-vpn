@@ -10,7 +10,7 @@ import 'package:master_vpn/app/utils/snackbar_utils.dart';
 
 class HomeController extends GetxController {
   final Rx<VpnInfoModel> vpnInfo = AppPreferences.vpnInfo.obs;
-
+  final VpnEngine engine = Get.find();
   final RxString vpnConnectionState = VpnEngine.vpnDisconnected.obs;
 
   void connectToVpn() async {
@@ -28,9 +28,9 @@ class HomeController extends GetxController {
         config: config,
       );
 
-      await VpnEngine.startVpn(vpnConfig);
+      await engine.startVpn(vpnConfig);
     } else {
-      VpnEngine.stopVpn();
+      engine.stopVpn();
     }
   }
 

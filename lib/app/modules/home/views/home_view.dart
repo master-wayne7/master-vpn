@@ -14,6 +14,12 @@ class HomeView extends GetView<HomeController> {
   const HomeView({super.key});
   @override
   Widget build(BuildContext context) {
+    controller.engine.vpnStageSnapshot().listen(
+      (event) {
+        controller.vpnConnectionState.value = event;
+        print(event);
+      },
+    );
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
@@ -69,7 +75,7 @@ class HomeView extends GetView<HomeController> {
           ),
           StreamBuilder<VpnStatus?>(
             initialData: VpnStatus(),
-            stream: VpnEngine.vpnStatusSnapshot(),
+            stream: controller.engine.vpnStatusSnapshot(),
             builder: (context, snapshot) {
               return Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
